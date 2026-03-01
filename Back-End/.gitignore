@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Uploaded files (user content, keep out of repo)
+uploads/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / output
+dist
+build
+coverage
+.nyc_output
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.sw?
+
+# Prisma (generated client lives in node_modules; keep migrations)
+# prisma/migrations is committed

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Theme variables - event-booking reference (gold, dark) */
+:root {
+  --color-primary: #C9A84C;
+  --color-primary-light: #E8D5A3;
+  --color-bg: #080808;
+  --color-bg-elevated: #111111;
+  --color-bg-card: #1A1A1A;
+  --color-bg-input: #222222;
+  --color-text: #F5F0E8;
+  --color-text-muted: #888888;
+  --color-border: rgba(201, 168, 76, 0.15);
+  --font-header: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-accent: 'Cormorant Garamond', serif;
+}
+
+[data-theme="light"] {
+  --color-bg: #F5F0E8;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #f0ebe3;
+  --color-bg-input: #e8e3db;
+  --color-text: #080808;
+  --color-text-muted: #555555;
+  --color-border: rgba(201, 168, 76, 0.3);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-header { font-family: var(--font-header); }
+.font-body { font-family: var(--font-body); }
+.font-accent { font-family: var(--font-accent); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-elevated); }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 3px; }
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
